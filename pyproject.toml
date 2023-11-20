@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "project_name"
-version = "0.0.0"  
+version = "0.0.0"
 description = "Project Description"
 authors = ["Alan Cooney <41682961+alan-cooney@users.noreply.github.com>"]
 license = "MIT"
@@ -15,6 +15,9 @@ torch = ">=2.1"
 transformer-lens = "^1.9.0"
 plotly-utils = "^0.0.3"
 nbstripout = "^0.6.1"
+matplotlib = "^3.8.2"
+torchtyping = "^0.1.4"
+pygraphviz = "^1.11"
 
 [tool.poetry.group.dev.dependencies]
 pytest = ">=7"
@@ -41,8 +44,8 @@ filterwarnings = [
     # More info: https://numpy.org/doc/stable/reference/distutils.html#module-numpy.distutils
     "ignore:distutils Version classes are deprecated:DeprecationWarning"
 ]
-addopts = """--jaxtyping-packages=transformer_lens,beartype.beartype \ 
--W ignore::beartype.roar.BeartypeDecorHintPep585DeprecationWarning \ 
+addopts = """--jaxtyping-packages=transformer_lens,beartype.beartype \
+-W ignore::beartype.roar.BeartypeDecorHintPep585DeprecationWarning \
 --deselect transformer_lens/utils.py::test_prompt \
 --doctest-modules --doctest-plus \
 --nbval"""
