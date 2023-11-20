@@ -18,6 +18,7 @@ nbstripout = "^0.6.1"
 matplotlib = "^3.8.2"
 torchtyping = "^0.1.4"
 pygraphviz = "^1.11"
+cmapy = "^0.6.6"
 
 [tool.poetry.group.dev.dependencies]
 pytest = ">=7"
